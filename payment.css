@@ -1,0 +1,185 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        .wrapper {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .wrapper .row {
+            padding: 0;
+            --bs-gutter-x: var(--bs-gutter-x)
+        }
+
+        .progresses {
+            position: relative;
+            max-width: 70%;
+            margin: auto;
+        }
+
+        .progresses ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .progresses ul li {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            z-index: 200;
+            position: relative;
+        }
+
+        .progresses ul li.blue {
+            color: #3268ff;
+            background-color: #3268ff;
+        }
+
+        .progresses ul li::after {
+            position: absolute;
+            top: 35px;
+            left: -15px;
+            font-size: 0.8rem;
+            width: 90px;
+        }
+
+        #step-1::after {
+            content: "Account";
+        }
+
+        #step-2::after {
+            content: "Shipping";
+            left: -15px;
+        }
+
+        #step-3::after {
+            content: "Payment";
+        }
+
+        #step-1 {
+            background-color: white;
+        }
+
+        #step-2 {
+            background-color: white;
+        }
+
+        #step-3 {
+
+            background-color: #254777;
+
+        }
+
+        #step-outline-1 {
+            width: 40px;
+            height: 40px;
+            z-index: 200;
+            position: relative;
+        }
+
+        #step-outline-2 {
+            width: 40px;
+            height: 40px;
+            z-index: 200;
+            position: relative;
+
+        }
+
+        #step-outline-3 {
+            width: 40px;
+            height: 40px;
+            z-index: 200;
+            position: relative;
+            background-color: white;
+        }
+
+
+        .progresses .progress {
+            height: 0.1rem;
+            width: 95%;
+            top: 43px;
+            position: absolute;
+            background-color: gray;
+            border-radius: 10px;
+            margin-left: 15px;
+        }
+
+        /* form style */
+        .get-in-touch {
+            max-width: 800px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .get-in-touch .title {
+            color: gray;
+        }
+
+        .contact-form .form-field {
+            position: relative;
+            margin: 32px 0;
+        }
+
+        .contact-form .input-text {
+            display: block;
+            width: 100%;
+            height: 36px;
+            border-width: 0 0 2px 0;
+            border-color: gray;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+        }
+
+        .contact-form .input-text:focus {
+            outline: none;
+        }
+
+
+
+        .contact-form .label {
+            position: absolute;
+            left: 20px;
+            bottom: 11px;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            color: gray;
+            cursor: text;
+
+        }
+
+        #btn1 {
+            width: 10rem;
+            padding: 5px;
+            background-color: white;
+            border: 1.5px solid #254777;
+
+        }
+
+        #btn2 {
+            width: 10rem;
+            padding: 5px;
+            background-color: #254777;
+            border: 2px solid #254777;
+        }
+
+        #icon-shoop
+        {
+            display: flex;
+            width: 160px;
+            justify-content: space-between;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            .progresses .progress {
+                width: 90%;
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
+            .get-in-touch {
+            margin: 50px 10px;
+        }
+        }
